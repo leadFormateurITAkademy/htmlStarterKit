@@ -1,11 +1,31 @@
+/* Selectors for balises */
+* {
+  font-family: 'Montserrat', sans-serif;
+}
 header {
+  background-color: #FFCE99;
   height: 60px;
 }
 footer {
   height: 60px;
 }
+main {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+/* Selectors for classes */
+.image-container {
+  width: 500px;
+}
 .full-height {
   height: 100%;
+}
+.no-padding-margin {
+  margin: 0;
+  padding: 0;
+}
+.list-no-style {
+  list-style: none;
 }
 .flex-base {
   display: flex;
@@ -14,6 +34,22 @@ footer {
 }
 .flex-center {
   align-items: center;
+}
+.flex-column {
+  flex-direction: column;
+}
+.p-base {
+  width: 650px;
+  text-align: justify;
+}
+#logo-title {
+  font-family: 'Eagle Lake', cursive;
+  text-transform: uppercase;
+}
+/* Complex selectors */
+.image-container>img {
+  max-width: 100%;
+  height: auto;
 }
 .menu-buttons>li, .footer-buttons>li, .footer-buttons>li>a {
   padding-left: 10px;
@@ -28,15 +64,6 @@ footer {
   background-color: black;
   color: white;
 }
-
-
 ul.flex-center {
     width: 300px;
-}
-.no-padding-margin {
-  margin: 0;
-  padding: 0;
-}
-.list-no-style {
-  list-style: none;
 }
