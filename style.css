@@ -1,6 +1,9 @@
 header {
   height: 60px;
 }
+.full-height {
+  height: 100%;
+}
 .flex-base {
   display: flex;
   flex-direction: row;
@@ -9,12 +12,23 @@ header {
 .flex-center {
   align-items: center;
 }
+.menu-buttons>li {
+  padding-left: 10px;
+  padding-right: 10px;
+}
 .menu-buttons>li>a {
   text-decoration: none;
   color: black;
+  text-transform: uppercase;
 }
+.menu-buttons>li:hover, .menu-buttons>li:hover>a {
+  background-color: black;
+  color: white;
+}
+
+
 ul.flex-center {
-    width: 200px;
+    width: 300px;
 }
 .no-padding-margin {
   margin: 0;
