@@ -21,7 +21,9 @@ function checkVictory(divs) {
     }
   }
   if(victoryState == true) {
-    alert('Vous avez gagné');
+    setTimeout(function(){
+      alert('Vous avez gagné');
+    }, 500);
   }
   // Si toute les div sont rouge, on a gagné
   // Si aucune div n'est verte, on a gagné
